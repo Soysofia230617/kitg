@@ -1,0 +1,1744 @@
+#==============Test 1==============
+Vertices: [1, 2, 3, 4]
+Edge: 1 -> 2
+Neighbours of 1: [2]
+Edge: 2 -> 3
+Edge (undirected): 2 -> 1
+Neighbours of 2: [1, 3]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 4 -> 3
+Neighbours of 4: [3]
+"Starting vertex: 2 with degree: 2
+Edge: 1 -> 2
+Neighbours of 1: [2]
+Edge: 1 -> 2
+Neighbours of 1: [2]
+Edge: 1 -> 2
+Neighbours of 1: [2]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 4 -> 3
+Neighbours of 4: [3]
+Lex-BFS order: [1, 3, 4, 2]
+Edge: 1 -> 2
+Neighbours of 1: [2]
+Edge: 1 -> 2
+Neighbours of 1: [2]
+Edge: 1 -> 2
+Neighbours of 1: [2]
+Vertex 1 right neighbors: [2]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+!Vertex 3 right neighbors: [4, 2]
+Edge (undirected): 4 -> 3
+Neighbours of 4: [3]
+Edge: 1 -> 2
+Neighbours of 1: [2]
+Edge (undirected): 4 -> 3
+Neighbours of 4: [3]
+Vertex 4 right neighbors: []
+Vertex 2 right neighbors: []
+Edge: 1 -> 2
+Neighbours of 1: [2]
+Edge: 1 -> 2
+Neighbours of 1: [2]
+Edge: 1 -> 2
+Neighbours of 1: [2]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 4 -> 3
+Neighbours of 4: [3]
+Edge (undirected): 4 -> 3
+Neighbours of 4: [3]
+Edge (undirected): 4 -> 3
+Neighbours of 4: [3]
+Edge: 2 -> 3
+Edge (undirected): 2 -> 1
+Neighbours of 2: [1, 3]
+$Candidate cliques: [[1, 2], [3, 4]]
+2Maximal cliques after filtering: [[1, 2], [3, 4]]
+2Maximal cliques before ordering: [[1, 2], [3, 4]]
+)Maximal cliques after ordering: [[1, 2]]
+Vertex 1 cliques: [0]
+Vertex 2 cliques: [0]
+Vertex 3 cliques: []
+Vertex 4 cliques: []
+#==============Test 2==============
+Vertices: [1, 2, 3, 4, 5]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Edge: 1 -> 4
+Neighbours of 1: [2, 4, 5]
+Edge: 2 -> 3
+Edge (undirected): 2 -> 1
+Neighbours of 2: [1, 3]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 4 -> 3
+Edge (undirected): 4 -> 1
+Neighbours of 4: [1, 3]
+Edge (undirected): 5 -> 1
+Neighbours of 5: [1]
+"Starting vertex: 1 with degree: 3
+Edge: 2 -> 3
+Edge (undirected): 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge (undirected): 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge (undirected): 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge (undirected): 2 -> 1
+Neighbours of 2: [1, 3]
+Edge (undirected): 4 -> 3
+Edge (undirected): 4 -> 1
+Neighbours of 4: [1, 3]
+Edge (undirected): 4 -> 3
+Edge (undirected): 4 -> 1
+Neighbours of 4: [1, 3]
+Edge (undirected): 4 -> 3
+Edge (undirected): 4 -> 1
+Neighbours of 4: [1, 3]
+Edge (undirected): 5 -> 1
+Neighbours of 5: [1]
+Edge (undirected): 5 -> 1
+Neighbours of 5: [1]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Lex-BFS order: [2, 4, 5, 3, 1]
+Edge: 2 -> 3
+Edge (undirected): 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge (undirected): 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge (undirected): 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge (undirected): 2 -> 1
+Neighbours of 2: [1, 3]
+!Vertex 2 right neighbors: [3, 1]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 4 -> 3
+Edge (undirected): 4 -> 1
+Neighbours of 4: [1, 3]
+,Non-clique: 3 and 1 not connected, forms C4
+Graph is not chordal
+#==============Test 3==============
+.Vertices: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Edge (undirected): 1 -> 11
+Edge (undirected): 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5, 11]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 8
+Neighbours of 3: [2, 4, 8]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 5 -> 4
+Edge: 5 -> 6
+Edge (undirected): 5 -> 1
+Neighbours of 5: [1, 4, 6]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Neighbours of 7: [6, 8]
+Edge (undirected): 8 -> 7
+Edge: 8 -> 9
+Edge (undirected): 8 -> 3
+Neighbours of 8: [3, 7, 9]
+Edge (undirected): 9 -> 8
+Edge: 9 -> 10
+Neighbours of 9: [8, 10]
+Edge (undirected): 10 -> 9
+Edge: 10 -> 11
+Neighbours of 10: [9, 11]
+Edge (undirected): 11 -> 10
+Edge: 11 -> 1
+Edge: 11 -> 4
+Neighbours of 11: [1, 4, 10]
+"Starting vertex: 1 with degree: 3
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 8 -> 7
+Edge: 8 -> 9
+Edge (undirected): 8 -> 3
+Neighbours of 8: [3, 7, 9]
+Edge (undirected): 8 -> 7
+Edge: 8 -> 9
+Edge (undirected): 8 -> 3
+Neighbours of 8: [3, 7, 9]
+Edge (undirected): 8 -> 7
+Edge: 8 -> 9
+Edge (undirected): 8 -> 3
+Neighbours of 8: [3, 7, 9]
+Edge (undirected): 8 -> 7
+Edge: 8 -> 9
+Edge (undirected): 8 -> 3
+Neighbours of 8: [3, 7, 9]
+Edge (undirected): 8 -> 7
+Edge: 8 -> 9
+Edge (undirected): 8 -> 3
+Neighbours of 8: [3, 7, 9]
+Edge (undirected): 8 -> 7
+Edge: 8 -> 9
+Edge (undirected): 8 -> 3
+Neighbours of 8: [3, 7, 9]
+Edge (undirected): 8 -> 7
+Edge: 8 -> 9
+Edge (undirected): 8 -> 3
+Neighbours of 8: [3, 7, 9]
+Edge (undirected): 10 -> 9
+Edge: 10 -> 11
+Neighbours of 10: [9, 11]
+Edge (undirected): 10 -> 9
+Edge: 10 -> 11
+Neighbours of 10: [9, 11]
+Edge (undirected): 10 -> 9
+Edge: 10 -> 11
+Neighbours of 10: [9, 11]
+Edge (undirected): 10 -> 9
+Edge: 10 -> 11
+Neighbours of 10: [9, 11]
+Edge (undirected): 10 -> 9
+Edge: 10 -> 11
+Neighbours of 10: [9, 11]
+Edge (undirected): 10 -> 9
+Edge: 10 -> 11
+Neighbours of 10: [9, 11]
+Edge (undirected): 9 -> 8
+Edge: 9 -> 10
+Neighbours of 9: [8, 10]
+Edge (undirected): 9 -> 8
+Edge: 9 -> 10
+Neighbours of 9: [8, 10]
+Edge (undirected): 9 -> 8
+Edge: 9 -> 10
+Neighbours of 9: [8, 10]
+Edge (undirected): 9 -> 8
+Edge: 9 -> 10
+Neighbours of 9: [8, 10]
+Edge (undirected): 9 -> 8
+Edge: 9 -> 10
+Neighbours of 9: [8, 10]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Neighbours of 7: [6, 8]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Neighbours of 7: [6, 8]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Neighbours of 7: [6, 8]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Neighbours of 7: [6, 8]
+Edge (undirected): 11 -> 10
+Edge: 11 -> 1
+Edge: 11 -> 4
+Neighbours of 11: [1, 4, 10]
+Edge (undirected): 11 -> 10
+Edge: 11 -> 1
+Edge: 11 -> 4
+Neighbours of 11: [1, 4, 10]
+Edge (undirected): 11 -> 10
+Edge: 11 -> 1
+Edge: 11 -> 4
+Neighbours of 11: [1, 4, 10]
+Edge (undirected): 5 -> 4
+Edge: 5 -> 6
+Edge (undirected): 5 -> 1
+Neighbours of 5: [1, 4, 6]
+Edge (undirected): 5 -> 4
+Edge: 5 -> 6
+Edge (undirected): 5 -> 1
+Neighbours of 5: [1, 4, 6]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 8
+Neighbours of 3: [2, 4, 8]
+3Lex-BFS order: [2, 4, 6, 8, 10, 9, 7, 11, 5, 3, 1]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+Edge: 2 -> 3
+Edge: 2 -> 1
+Neighbours of 2: [1, 3]
+!Vertex 2 right neighbors: [3, 1]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 8
+Neighbours of 3: [2, 4, 8]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 5 -> 4
+Edge: 5 -> 6
+Edge (undirected): 5 -> 1
+Neighbours of 5: [1, 4, 6]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Neighbours of 7: [6, 8]
+Edge (undirected): 8 -> 7
+Edge: 8 -> 9
+Edge (undirected): 8 -> 3
+Neighbours of 8: [3, 7, 9]
+Edge (undirected): 9 -> 8
+Edge: 9 -> 10
+Neighbours of 9: [8, 10]
+Edge (undirected): 10 -> 9
+Edge: 10 -> 11
+Neighbours of 10: [9, 11]
+Edge (undirected): 11 -> 10
+Edge: 11 -> 1
+Edge: 11 -> 4
+Neighbours of 11: [1, 4, 10]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge (undirected): 4 -> 11
+Neighbours of 4: [3, 5, 11]
+%Vertex 4 right neighbors: [11, 5, 3]
+Edge (undirected): 11 -> 10
+Edge: 11 -> 1
+Edge: 11 -> 4
+Neighbours of 11: [1, 4, 10]
+Edge (undirected): 1 -> 11
+Edge (undirected): 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5, 11]
+-Non-clique: 11 and 5 not connected, forms C4
+Graph is not chordal
+#==============Test 4==============
+&Vertices: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 1
+Neighbours of 4: [1, 3]
+Edge (undirected): 5 -> 2
+Edge: 5 -> 6
+Edge: 5 -> 9
+Neighbours of 5: [2, 6, 9]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Neighbours of 7: [6, 8]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge: 9 -> 8
+Edge (undirected): 9 -> 5
+Neighbours of 9: [5, 8]
+"Starting vertex: 2 with degree: 3
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 5 -> 2
+Edge: 5 -> 6
+Edge: 5 -> 9
+Neighbours of 5: [2, 6, 9]
+Edge (undirected): 5 -> 2
+Edge: 5 -> 6
+Edge: 5 -> 9
+Neighbours of 5: [2, 6, 9]
+Edge (undirected): 5 -> 2
+Edge: 5 -> 6
+Edge: 5 -> 9
+Neighbours of 5: [2, 6, 9]
+Edge (undirected): 5 -> 2
+Edge: 5 -> 6
+Edge: 5 -> 9
+Neighbours of 5: [2, 6, 9]
+Edge (undirected): 5 -> 2
+Edge: 5 -> 6
+Edge: 5 -> 9
+Neighbours of 5: [2, 6, 9]
+Edge (undirected): 5 -> 2
+Edge: 5 -> 6
+Edge: 5 -> 9
+Neighbours of 5: [2, 6, 9]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Neighbours of 7: [6, 8]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Neighbours of 7: [6, 8]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Neighbours of 7: [6, 8]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Neighbours of 7: [6, 8]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Neighbours of 7: [6, 8]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge: 9 -> 8
+Edge (undirected): 9 -> 5
+Neighbours of 9: [5, 8]
+Edge: 9 -> 8
+Edge (undirected): 9 -> 5
+Neighbours of 9: [5, 8]
+Edge: 9 -> 8
+Edge (undirected): 9 -> 5
+Neighbours of 9: [5, 8]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 1
+Neighbours of 4: [1, 3]
++Lex-BFS order: [1, 3, 5, 7, 8, 9, 6, 4, 2]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+!Vertex 1 right neighbors: [4, 2]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 1
+Neighbours of 4: [1, 3]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+,Non-clique: 4 and 2 not connected, forms C4
+Graph is not chordal
+#==============Test 5==============
+&Vertices: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 1
+Neighbours of 3: [1, 2, 4]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 1
+Neighbours of 4: [1, 3]
+Edge (undirected): 5 -> 2
+Edge: 5 -> 6
+Edge: 5 -> 9
+Edge: 5 -> 7
+Neighbours of 5: [2, 6, 7, 9]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Edge (undirected): 7 -> 5
+Neighbours of 7: [5, 6, 8]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge: 9 -> 8
+Edge (undirected): 9 -> 5
+Neighbours of 9: [5, 8]
+"Starting vertex: 5 with degree: 4
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge: 9 -> 8
+Edge (undirected): 9 -> 5
+Neighbours of 9: [5, 8]
+Edge: 9 -> 8
+Edge (undirected): 9 -> 5
+Neighbours of 9: [5, 8]
+Edge: 9 -> 8
+Edge (undirected): 9 -> 5
+Neighbours of 9: [5, 8]
+Edge: 9 -> 8
+Edge (undirected): 9 -> 5
+Neighbours of 9: [5, 8]
+Edge: 9 -> 8
+Edge (undirected): 9 -> 5
+Neighbours of 9: [5, 8]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Edge (undirected): 7 -> 5
+Neighbours of 7: [5, 6, 8]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Edge (undirected): 7 -> 5
+Neighbours of 7: [5, 6, 8]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Edge (undirected): 7 -> 5
+Neighbours of 7: [5, 6, 8]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Edge (undirected): 7 -> 5
+Neighbours of 7: [5, 6, 8]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 5]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 5]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 5]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 1
+Neighbours of 4: [1, 3]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 1
+Neighbours of 4: [1, 3]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 1
+Neighbours of 3: [1, 2, 4]
++Lex-BFS order: [1, 6, 8, 9, 7, 2, 4, 3, 5]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+$Vertex 1 right neighbors: [2, 4, 3]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 1
+Neighbours of 3: [1, 2, 4]
+Edge (undirected): 5 -> 2
+Edge: 5 -> 6
+Edge: 5 -> 9
+Edge: 5 -> 7
+Neighbours of 5: [2, 6, 7, 9]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Edge (undirected): 7 -> 5
+Neighbours of 7: [5, 6, 8]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge: 9 -> 8
+Edge (undirected): 9 -> 5
+Neighbours of 9: [5, 8]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 5]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+Edge (undirected): 6 -> 5
+Edge: 6 -> 7
+Neighbours of 6: [5, 7]
+!Vertex 6 right neighbors: [7, 5]
+Edge (undirected): 7 -> 6
+Edge: 7 -> 8
+Edge (undirected): 7 -> 5
+Neighbours of 7: [5, 6, 8]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+Edge (undirected): 8 -> 7
+Edge (undirected): 8 -> 9
+Neighbours of 8: [7, 9]
+!Vertex 8 right neighbors: [9, 7]
+Edge: 9 -> 8
+Edge (undirected): 9 -> 5
+Neighbours of 9: [5, 8]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Edge (undirected): 1 -> 3
+Neighbours of 1: [2, 3, 4]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 1
+Neighbours of 3: [1, 2, 4]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 1
+Neighbours of 4: [1, 3]
+Edge (undirected): 5 -> 2
+Edge: 5 -> 6
+Edge: 5 -> 9
+Edge: 5 -> 7
+Neighbours of 5: [2, 6, 7, 9]
+,Non-clique: 9 and 7 not connected, forms C4
+Graph is not chordal
+#==============Test 6==============
+ Vertices: [1, 2, 3, 4, 5, 6, 7]
+Neighbours of 1: []
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+Neighbours of 3: []
+Edge (undirected): 4 -> 2
+Edge: 4 -> 5
+Edge: 4 -> 7
+Neighbours of 4: [2, 5, 7]
+Edge (undirected): 5 -> 4
+Edge: 5 -> 7
+Neighbours of 5: [4, 7]
+Edge: 6 -> 7
+Neighbours of 6: [7]
+Edge (undirected): 7 -> 2
+Edge (undirected): 7 -> 4
+Edge (undirected): 7 -> 5
+Edge (undirected): 7 -> 6
+Neighbours of 7: [2, 4, 5, 6]
+"Starting vertex: 7 with degree: 4
+Neighbours of 1: []
+Neighbours of 1: []
+Neighbours of 1: []
+Neighbours of 1: []
+Neighbours of 1: []
+Neighbours of 1: []
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+Neighbours of 3: []
+Neighbours of 3: []
+Neighbours of 3: []
+Neighbours of 3: []
+Edge (undirected): 5 -> 4
+Edge: 5 -> 7
+Neighbours of 5: [4, 7]
+Edge (undirected): 5 -> 4
+Edge: 5 -> 7
+Neighbours of 5: [4, 7]
+Edge (undirected): 5 -> 4
+Edge: 5 -> 7
+Neighbours of 5: [4, 7]
+Edge: 6 -> 7
+Neighbours of 6: [7]
+Edge: 6 -> 7
+Neighbours of 6: [7]
+Edge (undirected): 4 -> 2
+Edge: 4 -> 5
+Edge: 4 -> 7
+Neighbours of 4: [2, 5, 7]
+%Lex-BFS order: [1, 2, 3, 5, 6, 4, 7]
+Neighbours of 1: []
+Neighbours of 1: []
+Neighbours of 1: []
+Neighbours of 1: []
+Neighbours of 1: []
+Neighbours of 1: []
+Vertex 1 right neighbors: []
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+!Vertex 2 right neighbors: [4, 7]
+Edge (undirected): 4 -> 2
+Edge: 4 -> 5
+Edge: 4 -> 7
+Neighbours of 4: [2, 5, 7]
+Neighbours of 3: []
+Neighbours of 3: []
+Neighbours of 3: []
+Neighbours of 3: []
+Vertex 3 right neighbors: []
+Edge (undirected): 5 -> 4
+Edge: 5 -> 7
+Neighbours of 5: [4, 7]
+Edge (undirected): 5 -> 4
+Edge: 5 -> 7
+Neighbours of 5: [4, 7]
+Edge (undirected): 5 -> 4
+Edge: 5 -> 7
+Neighbours of 5: [4, 7]
+!Vertex 5 right neighbors: [4, 7]
+Edge (undirected): 4 -> 2
+Edge: 4 -> 5
+Edge: 4 -> 7
+Neighbours of 4: [2, 5, 7]
+Edge: 6 -> 7
+Neighbours of 6: [7]
+Edge: 6 -> 7
+Neighbours of 6: [7]
+Vertex 6 right neighbors: [7]
+Edge (undirected): 4 -> 2
+Edge: 4 -> 5
+Edge: 4 -> 7
+Neighbours of 4: [2, 5, 7]
+Vertex 4 right neighbors: [7]
+Vertex 7 right neighbors: []
+Neighbours of 1: []
+Neighbours of 1: []
+Neighbours of 1: []
+Neighbours of 1: []
+Neighbours of 1: []
+Neighbours of 1: []
+Neighbours of 1: []
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+Edge: 2 -> 4
+Edge: 2 -> 7
+Neighbours of 2: [4, 7]
+Edge (undirected): 4 -> 2
+Edge: 4 -> 5
+Edge: 4 -> 7
+Neighbours of 4: [2, 5, 7]
+Neighbours of 3: []
+Neighbours of 3: []
+Neighbours of 3: []
+Neighbours of 3: []
+Neighbours of 3: []
+Edge (undirected): 5 -> 4
+Edge: 5 -> 7
+Neighbours of 5: [4, 7]
+Edge (undirected): 5 -> 4
+Edge: 5 -> 7
+Neighbours of 5: [4, 7]
+Edge (undirected): 5 -> 4
+Edge: 5 -> 7
+Neighbours of 5: [4, 7]
+Edge (undirected): 4 -> 2
+Edge: 4 -> 5
+Edge: 4 -> 7
+Neighbours of 4: [2, 5, 7]
+Edge: 6 -> 7
+Neighbours of 6: [7]
+Edge: 6 -> 7
+Neighbours of 6: [7]
+Edge (undirected): 4 -> 2
+Edge: 4 -> 5
+Edge: 4 -> 7
+Neighbours of 4: [2, 5, 7]
+Edge (undirected): 7 -> 2
+Edge (undirected): 7 -> 4
+Edge (undirected): 7 -> 5
+Edge (undirected): 7 -> 6
+Neighbours of 7: [2, 4, 5, 6]
+DCandidate cliques: [[1], [2, 4, 7], [3], [4, 5, 7], [6, 7], [4, 7]]
+JMaximal cliques after filtering: [[1], [2, 4, 7], [3], [4, 5, 7], [6, 7]]
+JMaximal cliques before ordering: [[1], [2, 4, 7], [3], [4, 5, 7], [6, 7]]
+?Maximal cliques after ordering: [[2, 4, 7], [4, 5, 7], [6, 7]]
+Vertex 1 cliques: []
+Vertex 2 cliques: [0]
+Vertex 3 cliques: []
+Vertex 4 cliques: [0, 1]
+Vertex 5 cliques: [1]
+Vertex 6 cliques: [2]
+Vertex 7 cliques: [0, 1, 2]
+#==============Test 7==============
+Vertices: [1, 2, 3, 4, 5]
+Edge: 1 -> 2
+Edge: 1 -> 3
+Edge: 1 -> 5
+Neighbours of 1: [2, 3, 5]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 4
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 4, 5]
+Edge (undirected): 3 -> 1
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [1, 2, 4, 5]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Neighbours of 4: [2, 3]
+Edge (undirected): 5 -> 1
+Edge (undirected): 5 -> 2
+Edge (undirected): 5 -> 3
+Neighbours of 5: [1, 2, 3]
+"Starting vertex: 2 with degree: 4
+Edge: 1 -> 2
+Edge: 1 -> 3
+Edge: 1 -> 5
+Neighbours of 1: [2, 3, 5]
+Edge: 1 -> 2
+Edge: 1 -> 3
+Edge: 1 -> 5
+Neighbours of 1: [2, 3, 5]
+Edge: 1 -> 2
+Edge: 1 -> 3
+Edge: 1 -> 5
+Neighbours of 1: [2, 3, 5]
+Edge: 1 -> 2
+Edge: 1 -> 3
+Edge: 1 -> 5
+Neighbours of 1: [2, 3, 5]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Neighbours of 4: [2, 3]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Neighbours of 4: [2, 3]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Neighbours of 4: [2, 3]
+Edge (undirected): 5 -> 1
+Edge (undirected): 5 -> 2
+Edge (undirected): 5 -> 3
+Neighbours of 5: [1, 2, 3]
+Edge (undirected): 5 -> 1
+Edge (undirected): 5 -> 2
+Edge (undirected): 5 -> 3
+Neighbours of 5: [1, 2, 3]
+Edge (undirected): 3 -> 1
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [1, 2, 4, 5]
+Lex-BFS order: [1, 4, 5, 3, 2]
+Edge: 1 -> 2
+Edge: 1 -> 3
+Edge: 1 -> 5
+Neighbours of 1: [2, 3, 5]
+Edge: 1 -> 2
+Edge: 1 -> 3
+Edge: 1 -> 5
+Neighbours of 1: [2, 3, 5]
+Edge: 1 -> 2
+Edge: 1 -> 3
+Edge: 1 -> 5
+Neighbours of 1: [2, 3, 5]
+Edge: 1 -> 2
+Edge: 1 -> 3
+Edge: 1 -> 5
+Neighbours of 1: [2, 3, 5]
+$Vertex 1 right neighbors: [5, 3, 2]
+Edge (undirected): 5 -> 1
+Edge (undirected): 5 -> 2
+Edge (undirected): 5 -> 3
+Neighbours of 5: [1, 2, 3]
+Edge (undirected): 5 -> 1
+Edge (undirected): 5 -> 2
+Edge (undirected): 5 -> 3
+Neighbours of 5: [1, 2, 3]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Neighbours of 4: [2, 3]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Neighbours of 4: [2, 3]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Neighbours of 4: [2, 3]
+!Vertex 4 right neighbors: [3, 2]
+Edge (undirected): 3 -> 1
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [1, 2, 4, 5]
+Edge (undirected): 5 -> 1
+Edge (undirected): 5 -> 2
+Edge (undirected): 5 -> 3
+Neighbours of 5: [1, 2, 3]
+Edge (undirected): 5 -> 1
+Edge (undirected): 5 -> 2
+Edge (undirected): 5 -> 3
+Neighbours of 5: [1, 2, 3]
+!Vertex 5 right neighbors: [3, 2]
+Edge (undirected): 3 -> 1
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [1, 2, 4, 5]
+Edge (undirected): 3 -> 1
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [1, 2, 4, 5]
+Vertex 3 right neighbors: [2]
+Vertex 2 right neighbors: []
+Edge: 1 -> 2
+Edge: 1 -> 3
+Edge: 1 -> 5
+Neighbours of 1: [2, 3, 5]
+Edge: 1 -> 2
+Edge: 1 -> 3
+Edge: 1 -> 5
+Neighbours of 1: [2, 3, 5]
+Edge: 1 -> 2
+Edge: 1 -> 3
+Edge: 1 -> 5
+Neighbours of 1: [2, 3, 5]
+Edge (undirected): 5 -> 1
+Edge (undirected): 5 -> 2
+Edge (undirected): 5 -> 3
+Neighbours of 5: [1, 2, 3]
+Edge: 1 -> 2
+Edge: 1 -> 3
+Edge: 1 -> 5
+Neighbours of 1: [2, 3, 5]
+Edge (undirected): 3 -> 1
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [1, 2, 4, 5]
+Edge (undirected): 5 -> 1
+Edge (undirected): 5 -> 2
+Edge (undirected): 5 -> 3
+Neighbours of 5: [1, 2, 3]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Neighbours of 4: [2, 3]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Neighbours of 4: [2, 3]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Neighbours of 4: [2, 3]
+Edge (undirected): 3 -> 1
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [1, 2, 4, 5]
+Edge (undirected): 5 -> 1
+Edge (undirected): 5 -> 2
+Edge (undirected): 5 -> 3
+Neighbours of 5: [1, 2, 3]
+Edge (undirected): 5 -> 1
+Edge (undirected): 5 -> 2
+Edge (undirected): 5 -> 3
+Neighbours of 5: [1, 2, 3]
+Edge (undirected): 3 -> 1
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [1, 2, 4, 5]
+Edge (undirected): 3 -> 1
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [1, 2, 4, 5]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 4
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 4, 5]
+@Candidate cliques: [[1, 2, 3, 5], [2, 3, 4], [2, 3, 5], [2, 3]]
+;Maximal cliques after filtering: [[1, 2, 3, 5], [2, 3, 4]]
+;Maximal cliques before ordering: [[1, 2, 3, 5], [2, 3, 4]]
+:Maximal cliques after ordering: [[1, 2, 3, 5], [2, 3, 4]]
+Vertex 1 cliques: [0]
+Vertex 2 cliques: [0, 1]
+Vertex 3 cliques: [0, 1]
+Vertex 4 cliques: [1]
+Vertex 5 cliques: [0]
+#==============Test 8==============
+Vertices: [1, 2, 3]
+Edge: 1 -> 2
+Edge: 1 -> 3
+Neighbours of 1: [2, 3]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Neighbours of 2: [1, 3]
+Edge (undirected): 3 -> 1
+Edge (undirected): 3 -> 2
+Neighbours of 3: [1, 2]
+"Starting vertex: 1 with degree: 2
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Neighbours of 2: [1, 3]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Neighbours of 2: [1, 3]
+Edge (undirected): 3 -> 1
+Edge (undirected): 3 -> 2
+Neighbours of 3: [1, 2]
+Lex-BFS order: [2, 3, 1]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Neighbours of 2: [1, 3]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Neighbours of 2: [1, 3]
+!Vertex 2 right neighbors: [3, 1]
+Edge (undirected): 3 -> 1
+Edge (undirected): 3 -> 2
+Neighbours of 3: [1, 2]
+Edge (undirected): 3 -> 1
+Edge (undirected): 3 -> 2
+Neighbours of 3: [1, 2]
+Vertex 3 right neighbors: [1]
+Vertex 1 right neighbors: []
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Neighbours of 2: [1, 3]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Neighbours of 2: [1, 3]
+Edge (undirected): 3 -> 1
+Edge (undirected): 3 -> 2
+Neighbours of 3: [1, 2]
+Edge (undirected): 3 -> 1
+Edge (undirected): 3 -> 2
+Neighbours of 3: [1, 2]
+Edge: 1 -> 2
+Edge: 1 -> 3
+Neighbours of 1: [2, 3]
+'Candidate cliques: [[1, 2, 3], [1, 3]]
+-Maximal cliques after filtering: [[1, 2, 3]]
+-Maximal cliques before ordering: [[1, 2, 3]]
+,Maximal cliques after ordering: [[1, 2, 3]]
+Vertex 1 cliques: [0]
+Vertex 2 cliques: [0]
+Vertex 3 cliques: [0]
+#==============Test 9==============
+Vertices: [1, 2, 3, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 4
+Neighbours of 2: [1, 3, 4]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Edge: 4 -> 1
+Neighbours of 4: [1, 2, 3]
+"Starting vertex: 2 with degree: 3
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Edge: 4 -> 1
+Neighbours of 4: [1, 2, 3]
+Lex-BFS order: [1, 3, 4, 2]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+!Vertex 1 right neighbors: [4, 2]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Edge: 4 -> 1
+Neighbours of 4: [1, 2, 3]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+!Vertex 3 right neighbors: [4, 2]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Edge: 4 -> 1
+Neighbours of 4: [1, 2, 3]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Edge: 4 -> 1
+Neighbours of 4: [1, 2, 3]
+Vertex 4 right neighbors: [2]
+Vertex 2 right neighbors: []
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge: 1 -> 2
+Edge (undirected): 1 -> 4
+Neighbours of 1: [2, 4]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Edge: 4 -> 1
+Neighbours of 4: [1, 2, 3]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Neighbours of 3: [2, 4]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Edge: 4 -> 1
+Neighbours of 4: [1, 2, 3]
+Edge (undirected): 4 -> 2
+Edge (undirected): 4 -> 3
+Edge: 4 -> 1
+Neighbours of 4: [1, 2, 3]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 4
+Neighbours of 2: [1, 3, 4]
+2Candidate cliques: [[1, 2, 4], [2, 3, 4], [2, 4]]
+8Maximal cliques after filtering: [[1, 2, 4], [2, 3, 4]]
+8Maximal cliques before ordering: [[1, 2, 4], [2, 3, 4]]
+7Maximal cliques after ordering: [[1, 2, 4], [2, 3, 4]]
+Vertex 1 cliques: [0]
+Vertex 2 cliques: [0, 1]
+Vertex 3 cliques: [1]
+Vertex 4 cliques: [0, 1]
+$==============Test 10==============
+Vertices: [1, 2, 3, 4, 5, 6]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [2, 4, 5]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge: 4 -> 6
+Neighbours of 4: [3, 5, 6]
+Edge (undirected): 5 -> 1
+Edge (undirected): 5 -> 2
+Edge (undirected): 5 -> 3
+Edge (undirected): 5 -> 4
+Neighbours of 5: [1, 2, 3, 4]
+Edge (undirected): 6 -> 4
+Neighbours of 6: [4]
+"Starting vertex: 5 with degree: 4
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [2, 4, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [2, 4, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [2, 4, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [2, 4, 5]
+Edge (undirected): 6 -> 4
+Neighbours of 6: [4]
+Edge (undirected): 6 -> 4
+Neighbours of 6: [4]
+Edge (undirected): 6 -> 4
+Neighbours of 6: [4]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge: 4 -> 6
+Neighbours of 4: [3, 5, 6]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge: 4 -> 6
+Neighbours of 4: [3, 5, 6]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 5]
+"Lex-BFS order: [1, 3, 6, 4, 2, 5]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+!Vertex 1 right neighbors: [2, 5]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [2, 4, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [2, 4, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [2, 4, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [2, 4, 5]
+$Vertex 3 right neighbors: [4, 2, 5]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge: 4 -> 6
+Neighbours of 4: [3, 5, 6]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge (undirected): 5 -> 1
+Edge (undirected): 5 -> 2
+Edge (undirected): 5 -> 3
+Edge (undirected): 5 -> 4
+Neighbours of 5: [1, 2, 3, 4]
+Edge (undirected): 6 -> 4
+Neighbours of 6: [4]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge: 4 -> 6
+Neighbours of 4: [3, 5, 6]
+Edge (undirected): 6 -> 4
+Neighbours of 6: [4]
+Edge (undirected): 6 -> 4
+Neighbours of 6: [4]
+Edge (undirected): 6 -> 4
+Neighbours of 6: [4]
+Vertex 6 right neighbors: [4]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge: 4 -> 6
+Neighbours of 4: [3, 5, 6]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge: 4 -> 6
+Neighbours of 4: [3, 5, 6]
+Vertex 4 right neighbors: [5]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 5]
+Vertex 2 right neighbors: [5]
+Vertex 5 right neighbors: []
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge: 1 -> 2
+Edge: 1 -> 5
+Neighbours of 1: [2, 5]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [2, 4, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [2, 4, 5]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [2, 4, 5]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge: 4 -> 6
+Neighbours of 4: [3, 5, 6]
+Edge (undirected): 3 -> 2
+Edge: 3 -> 4
+Edge: 3 -> 5
+Neighbours of 3: [2, 4, 5]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge: 4 -> 6
+Neighbours of 4: [3, 5, 6]
+Edge (undirected): 6 -> 4
+Neighbours of 6: [4]
+Edge (undirected): 6 -> 4
+Neighbours of 6: [4]
+Edge (undirected): 6 -> 4
+Neighbours of 6: [4]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge: 4 -> 6
+Neighbours of 4: [3, 5, 6]
+Edge (undirected): 4 -> 3
+Edge: 4 -> 5
+Edge: 4 -> 6
+Neighbours of 4: [3, 5, 6]
+Edge (undirected): 2 -> 1
+Edge: 2 -> 3
+Edge: 2 -> 5
+Neighbours of 2: [1, 3, 5]
+Edge (undirected): 5 -> 1
+Edge (undirected): 5 -> 2
+Edge (undirected): 5 -> 3
+Edge (undirected): 5 -> 4
+Neighbours of 5: [1, 2, 3, 4]
+BCandidate cliques: [[1, 2, 5], [3, 4, 5], [4, 6], [4, 5], [2, 5]]
+@Maximal cliques after filtering: [[1, 2, 5], [3, 4, 5], [4, 6]]
+@Maximal cliques before ordering: [[1, 2, 5], [3, 4, 5], [4, 6]]
+?Maximal cliques after ordering: [[1, 2, 5], [3, 4, 5], [4, 6]]
+Vertex 1 cliques: [0]
+Vertex 2 cliques: [0]
+Vertex 3 cliques: [1]
+Vertex 4 cliques: [1, 2]
+Vertex 5 cliques: [0, 1]
+Vertex 6 cliques: [2]
